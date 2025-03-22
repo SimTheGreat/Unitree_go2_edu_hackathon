@@ -52,11 +52,10 @@ Before downloading the Ubuntu image, check the processor type on your computer:
 
 #### Create a Virtual Machine in VMware
 
-1. Open VMware and click on **Create a New Virtual Machine**.
-2. Under **Browse**, select the downloaded Ubuntu file.
-3. Name your VM and choose the location on your computer.
-4. Assign  **20GB** of disk space (less is fine aswell).
-5. Complete the VMware installation steps.
+1. Open VMware and click on **Create a New Virtual Machine**.Or simply drag the iso file in VMware.+
+4. Name your VM and choose the location on your computer.
+5. Assign  **20GB** of disk space (less is fine aswell).
+6. Complete the VMware installation steps.
 
 ## For ARM-based Systems ONLY !!!!(Additional Setup):
 
