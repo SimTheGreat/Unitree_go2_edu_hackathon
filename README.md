@@ -110,7 +110,7 @@ Before downloading the Ubuntu image, check the processor type on your computer:
 
 5. Restart VMware and check if networks are managed.
 
-### Step 4: Install unitree_sdk2py
+## Step 4: Install unitree_sdk2py
 
 For all users:
 
@@ -118,16 +118,13 @@ For all users:
 
     ```bash
     pip install unitree_sdk2py
-    ```
-
-2. Install Python pip (if needed):
-
-    ```bash
-    cd ~
     sudo apt install python3-pip
+    sudo apt install git
+    sudo apt install net-tools
     ```
 
-3. Clone the unitree_sdk2_python repository and install it:
+
+2. Clone the unitree_sdk2_python repository and install it:
 
     ```bash
     git clone https://github.com/unitreerobotics/unitree_sdk2_python.git
@@ -162,10 +159,37 @@ Run these commands:
     pip3 install -e .
     ```
 
-### Step 5: Example Usage
+## Step 5: Test to See If It Works
 
-Test the setup with the following example command:
+### For macOS:
+1. Change the USB-C to Ethernet adapter's IP address to `192.168.123.XXX` (any value except `18`, which is reserved for the robot).
+2. Click on **Send to VM**.
+3. add a new network adaptor in vm settings
+4. In the VM, change the IP address again.
+5. Run the following command to check network connections:
+   ```bash
+    ifconfig
+    ```
+5.Identify the connection with 192.168.123.XXX this is the one you want to connect to.
 
-```bash
-python3 try.py enp2s0
-```
+
+# Setting Up the VM for Windows  
+
+1: Configure USB  
+Go to **VM Settings** > **USB** and set USB to **3.1**.  
+
+2: Connect to the VM  
+Send the connection to the VM.  
+
+3: Configure Network  
+In the VM, set the network connection to `192.168.123.XXX`  
+(Choose any value except `18`, which is reserved for the robot).  
+
+# Step 6: Testing the Setup  
+Test the setup using the following command.Change ens37 with the network name output ifconfig 192.168.123.XXX  If everything is configured correctly, the robot should sit down:  
+
+
+python3 /unitree_sdk2_python/example/go2/high_level/go2_sport_client.py ens37
+
+
+
