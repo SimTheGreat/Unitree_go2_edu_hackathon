@@ -169,6 +169,8 @@ Run these commands:
 ### For macOS:
 1. Change the USB-C to Ethernet adapter's IP address to `192.168.123.XXX` (any value except `18`, which is reserved for the robot).
 ![Description](pics/network_apple.png)
+2. Configure USB  
+Go to **VM Settings** > **USB** and set USB to **3.1**.  
    
 3. Click on **Send to VM**.
 4. add a new network adaptor in vm settings
