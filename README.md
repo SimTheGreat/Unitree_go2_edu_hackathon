@@ -175,7 +175,9 @@ Run these commands:
 ![Description](pics/add_network_vm.png)
    
 7. In the VM, change the IP address again.
-8. Run the following command to check network connections:
+   ![Description](pics/vm_ip.jpg)
+   
+9. Run the following command to check network connections:
    ```bash
     ifconfig
     ```
@@ -191,8 +193,11 @@ Go to **VM Settings** > **USB** and set USB to **3.1**.
 Send the connection to the VM.  
 
 3: Configure Network  
+
 In the VM, set the network connection to `192.168.123.XXX`  
 (Choose any value except `18`, which is reserved for the robot).  
+
+![Description](pics/vm_ip.jpg)
 
 # Step 6: Testing the Setup  
 Test the setup using the following command.Change ens37 with the network name output ifconfig 192.168.123.XXX  If everything is configured correctly, the robot should sit down:  
