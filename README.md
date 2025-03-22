@@ -72,7 +72,8 @@ Before downloading the Ubuntu image, check the processor type on your computer:
     After rebooting, Ubuntu should download the desktop version.
 
 3. Check if networks are unmanaged by going to the top-right of the screen. If yes, run the following:
-
+  ![Description](pics/networks_unamed.png)
+  ![Description](pics/unnamed_networks_fix.png)
     ```bash
     ifconfig
     ```
@@ -96,6 +97,7 @@ Before downloading the Ubuntu image, check the processor type on your computer:
     ```
 
     - In the Nano editor, replace the content with:
+    ![Description](pics/networks_fix.png)
 
     ```yaml
     network:
@@ -135,6 +137,7 @@ For all users:
 #### Fixing pip3 Installation Error
 
 If you encounter the following error:
+![Description](pics/possible_erroro.png)
 
   ```Could not locate cyclonedds. Try to set CYCLONEDDS_HOME or CMAKE_PREFIX_PATH  ```
 
@@ -163,10 +166,14 @@ Run these commands:
 
 ### For macOS:
 1. Change the USB-C to Ethernet adapter's IP address to `192.168.123.XXX` (any value except `18`, which is reserved for the robot).
-2. Click on **Send to VM**.
-3. add a new network adaptor in vm settings
-4. In the VM, change the IP address again.
-5. Run the following command to check network connections:
+![Description](pics/network_apple.png)
+   
+3. Click on **Send to VM**.
+4. add a new network adaptor in vm settings
+![Description](pics/add_network_vm.png)
+   
+7. In the VM, change the IP address again.
+8. Run the following command to check network connections:
    ```bash
     ifconfig
     ```
