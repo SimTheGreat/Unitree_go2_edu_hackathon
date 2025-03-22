@@ -137,7 +137,9 @@ For all users:
 #### Fixing pip3 Installation Error
 
 If you encounter the following error:
+
 ![Description](pics/possible_erroro.png)
+
 
   ```Could not locate cyclonedds. Try to set CYCLONEDDS_HOME or CMAKE_PREFIX_PATH  ```
 
